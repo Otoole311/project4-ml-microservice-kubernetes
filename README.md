@@ -48,3 +48,19 @@ source .devops/bin/activate
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+## Project Summary ##
+This project involves the use of machine learning technology to predict the cost of housing in Boston using data provided to the model.
+Factors the affect the prediction include the number of rooms, teacher-to-student ratio, etc.
+
+## How to Run python script ##
+* Make sure to have python installed
+* Download project file
+* Run "Makefile" using "make setup" to create the environment.
+* Install dependencies.  - "make install"
+* Build the docker project. - "bash run_docker.sh"
+* upload project to docker. "bash upload_docker.sh"
+* deploy kebernetes.sh. - "bash_kubernetes.sh"
+
+## Explanation of files in repository
+Files in repository contain scripts that create an environment to run the project, create a docker container, running docker, intergation with circleci and also running the deployed application in a kubernetes cluster.
